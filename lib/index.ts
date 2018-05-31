@@ -78,7 +78,7 @@ export function shuffle(list) {
     return list;
 }
 
-export function sample(list, n) {
+export function sample<T>(list:T[], n:number): T[] {
     var len = list.length;
     if (n > len) throw new RangeError("getRandom: more elements taken than available");
 

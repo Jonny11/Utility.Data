@@ -15,4 +15,4 @@ export declare function seconds(n: any): number;
 export declare function first(list: any): any;
 export declare function last(list: any): any;
 export declare function shuffle(list: any): any;
-export declare function sample(list: any, n: any): any[];
+export declare function sample<T>(list: T[], n: number): T[];
