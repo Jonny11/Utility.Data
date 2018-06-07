@@ -10,10 +10,6 @@ function keys(obj) {
     return obj == null ? [] : Object.keys(obj);
 }
 exports.keys = keys;
-function asPromise(value) {
-    return new Promise((resolve, reject) => resolve(value));
-}
-exports.asPromise = asPromise;
 function combinations(list, n = list.length) {
     // take a list and return a list of all possible (n)-ary
     if (n === 0)
@@ -93,4 +89,8 @@ function sample(list, n) {
     return result;
 }
 exports.sample = sample;
+function identity(x) {
+    return x;
+}
+exports.identity = identity;
 //# sourceMappingURL=index.js.map

@@ -9,10 +9,6 @@ export function keys(obj){
     return obj == null ? [] : Object.keys(obj);
 }
 
-export function asPromise(value){
-    return new Promise((resolve, reject) => resolve(value));
-}
-
 export function combinations(list, n=list.length){
     // take a list and return a list of all possible (n)-ary
     if(n === 0) return [];
@@ -90,3 +86,6 @@ export function sample<T>(list:T[], n:number): T[] {
     return result;
 }
 
+export function identity<T>(x:T): T{
+    return x;
+}
